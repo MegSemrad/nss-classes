@@ -9,6 +9,7 @@ namespace Classes
         public DateTime CreatedOn { get; }
         public List<Employee> Employees { get; set; }
 
+        // Below is a constructor
         public Company(string name, DateTime createdOn)
         {
             Name = name;
