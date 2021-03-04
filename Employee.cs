@@ -14,12 +14,12 @@ namespace Classes
         public DateTime StartDate { get; set; }
 
         public Employee(string firstName, string lastName,
-            string title, DateTime startDate)
+            string title)
         {
             FirstName = firstName;
             LastName = lastName;
             Title = title;
-            StartDate = startDate;
+            // StartDate = startDate;
         }
 
     }

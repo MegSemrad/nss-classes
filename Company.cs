@@ -5,8 +5,8 @@ namespace Classes
 {
     public class Company
     {
-        public string Name { get; }
-        public DateTime CreatedOn { get; }
+        public string Name { get; set; }
+        public DateTime CreatedOn { get; set; }
         public List<Employee> Employees { get; set; }
 
         // Below is a constructor
@@ -14,6 +14,7 @@ namespace Classes
         {
             Name = name;
             CreatedOn = createdOn;
+            Employees = new List<Employee>(); //list constructor
         }
 
         public void ListEmployees(Employee employee)

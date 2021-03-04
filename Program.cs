@@ -20,6 +20,9 @@ namespace Classes
             Tradlands.Employees.Add(John);
             Tradlands.Employees.Add(Trey);
 
+            Tradlands.ListEmployees(Ashley);
+            Tradlands.ListEmployees(John);
+            Tradlands.ListEmployees(Trey);
 
 
             //  Iterate the company's employee list and generate the
