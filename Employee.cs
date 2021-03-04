@@ -1,6 +1,6 @@
 using System;
 
-namespace classes
+namespace Classes
 {
     public class Employee
     {
@@ -11,6 +11,6 @@ namespace classes
 
         public string Title { get; set; }
 
-        public string StartDate { get; set; }
+        public DateTime StartDate { get; set; }
     }
 }
