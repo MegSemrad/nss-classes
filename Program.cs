@@ -23,10 +23,6 @@ namespace Classes
             Tradlands.ListEmployees(Ashley);
             Tradlands.ListEmployees(John);
             Tradlands.ListEmployees(Trey);
-
-
-            //  Iterate the company's employee list and generate the
-            //     simple report shown above
         }
     }
 }
