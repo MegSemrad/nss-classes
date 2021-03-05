@@ -7,11 +7,11 @@ namespace Classes
         static void Main(string[] args)
         {
 
-            Employee Ashley = new Employee("Ashley", "Smith", "Manager");
+            Employee Ashley = new Employee("Ashley", "Smith", "Manager", DateTime.Now);
 
-            Employee John = new Employee("John", "Doe", "Assistant Manager");
+            Employee John = new Employee("John", "Doe", "Assistant Manager", DateTime.Now);
 
-            Employee Trey = new Employee("Trey", "Ross", "Retail Associate");
+            Employee Trey = new Employee("Trey", "Ross", "Retail Associate", DateTime.Now);
 
 
 
@@ -23,7 +23,19 @@ namespace Classes
             Tradlands.ListEmployees(Ashley);
             Tradlands.ListEmployees(John);
             Tradlands.ListEmployees(Trey);
+
+            EmployeeReport(Tradlands);
+
+            void EmployeeReport(Company company)
+            {
+                foreach (Employee employee in company.Employees)
+                {
+                    Console.WriteLine($"{employee.FirstName}{employee.LastName} works for {company.Name} as {employee.Title} since {employee.StartDate}.");
+                }
+            }
         }
+
+
     }
 }
 
