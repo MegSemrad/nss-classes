@@ -7,12 +7,9 @@ namespace Classes
         static void Main(string[] args)
         {
 
-            Employee Ashley = new Employee("Ashley", "Smith", "Manager", DateTime.Now);
-
-            Employee John = new Employee("John", "Doe", "Assistant Manager", DateTime.Now);
-
-            Employee Trey = new Employee("Trey", "Ross", "Retail Associate", DateTime.Now);
-
+            Employee Ashley = new Employee("Ashley ", "Smith", "Manager", DateTime.Now);
+            Employee John = new Employee("John ", "Doe", "Assistant Manager", DateTime.Now);
+            Employee Trey = new Employee("Trey ", "Ross", "Retail Associate", DateTime.Now);
 
 
             Company Tradlands = new Company("Tradlands", DateTime.Now);
@@ -20,11 +17,14 @@ namespace Classes
             Tradlands.Employees.Add(John);
             Tradlands.Employees.Add(Trey);
 
+
             Tradlands.ListEmployees(Ashley);
             Tradlands.ListEmployees(John);
             Tradlands.ListEmployees(Trey);
 
+
             EmployeeReport(Tradlands);
+
 
             void EmployeeReport(Company company)
             {
@@ -34,10 +34,5 @@ namespace Classes
                 }
             }
         }
-
-
     }
 }
-
-
-
